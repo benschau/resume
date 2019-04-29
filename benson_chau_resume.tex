@@ -1,0 +1,155 @@
+%-------------------------
+% Resume in Latex
+% Original Author : Sourabh Bajaj
+% Modified by : Benson Chau
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://benschau.com/}{\Large Benson Chau}} & Email : \href{mailto:ben.chau@gatech.edu}{ben.chau@gatech.edu}\\
+  \href{https://benschau.com/}{https://www.benschau.com} & Mobile : +1-404-434-5548 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Bachelor of Science in Computer Science;  GPA: 3.35}{Aug. 2017 -- May 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+	\resumeSubheading
+	  {Georgia Tech Research Institute}{Atlanta, GA}
+	  {ICL Research Assistant and CIPHER Hardware Security Intern}{Nov 2018 -- Aug 2019}
+	  \resumeItemListStart
+	  	\resumeItem{ICL - Research Assistant}
+	  	   {Examining the capabilities of new RTX ray-tracing technology against the current state-of-the-art in the context of radio frequency signals in urban areas; created a pipeline for creating sample data and an OpenGL visualizer for CPU-based rendering, assisted in the development of an OptiX raytracer.}
+	  	   
+	  	\resumeItem{CIPHER - Hardware Security Intern}
+	  	   {}
+	  
+	  \resumeItemListEnd
+
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {PACE HPC Intern and ACL Resarch Assistant}{May 2018 -- Nov 2018}
+      \resumeItemListStart
+        \resumeItem{PACE - Lead Student Assistant}
+          {Managed a team of student assistants in maintaining and building software for the computing cluster.}
+        \resumeItem{PACE - Automation Scripting}
+          {Developed bash scripts to automate building specific package configurations and to sync against remote repositories.}
+        \resumeItem{ACL - Research Assistant}
+          {Created an automated benchmarking suite for several types of neural networks against popular datasets.}
+        \resumeItem{ACL - BitFusion}
+          {Co-authored the BitFusion ISA paper (ISCA 2018) describing a dynamically composable architecture for neural network acceleration.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {University of Georgia Small Satellite Lab}{Athens, GA}
+      {Algorithm Developer and Student Researcher}{Summer 2017}
+      \resumeItemListStart
+        \resumeItem{Algorithm Developer}
+          {Assembled a prototype structure from motion pipeline for 3D reconstruction processing on a CubeSat embedded system.}
+        \resumeItem{Student Researcher}
+          {Wrote a trade study on the practicality of structure from motion libraries for use on a CubeSat regarding computational complexity and design.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{CHIP8 Emulator}
+      {Open source CHIP8 emulator created in Rust as an introductory hardware enthusiast project.}
+  \resumeSubHeadingListEnd
+
+
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
